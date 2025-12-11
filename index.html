@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chemistry Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Virtual Lab Simulator</h1>
+      <p class="subtitle">Pick an experiment, use the example values, and run it.</p>
+    </div>
+    <div class="hero-badge">
+      <span>Safe. Simple. Fun.</span>
+    </div>
+  </div>
+
+  <!-- Experiment selection -->
+  <div class="experiment-select">
+    <label for="experiment">Select Experiment:</label>
+    <select id="experiment">
+      <option value="acid_base">Acid–Base Neutralization</option>
+      <option value="dilution">Solution Dilution (C₁V₁ = C₂V₂)</option>
+      <option value="gas_law">Ideal Gas Law (PV = nRT)</option>
+    </select>
+  </div>
+
+  <p id="expDescription" class="description"></p>
+
+  <div class="lab-container">
+    <!-- Dynamic inputs will be injected here -->
+    <div id="inputsContainer" class="input-box"></div>
+
+    <!-- Results & visuals -->
+    <div class="result-box">
+      <h2>Result</h2>
+      <div id="visualArea" class="visual-area">
+        <!-- Beaker / tube / balloon will appear here -->
+      </div>
+
+      <div id="numericResults" class="numeric-results">
+        <!-- Text results go here -->
+      </div>
+
+      <p id="error" class="error"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>Made by Rohan</p>
+  </footer>
+</body>
+</html>
